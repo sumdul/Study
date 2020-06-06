@@ -1,2 +1,2 @@
 a = input().split()
-d = a
+d2 = a
