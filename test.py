@@ -1,3 +1,1 @@
-n = 5
-for i in range(n, 0, -1):
-    print(i)
+if 7 in [1, 3, 5, 7, 9]:print("7이 있습니다.")
