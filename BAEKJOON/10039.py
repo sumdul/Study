@@ -1,14 +1,3 @@
-'''
-어제 이 수업의 기말고사가 있었고, 상현이는 지금 학생들의 기말고사 시험지를 채점하고 있다. 
-40점이상은 자기점수 
-40점미만 40점 
-학생 5명의 점수가 주어졌을 때, 평균 점수를 구하는 프로그램을 작성하시오.
-'''
-'''
-입력 5줄 정수 5단위 
-입력은 총 5줄로 이루어져 있고, 원섭이의 점수, 세희의 점수, 상근이의 점수, 숭이의 점수, 강수의 점수가 순서대로 주어진다.
-점수는 모두 0점 이상, 100점 이하인 5의 배수이다. 따라서, 평균 점수는 항상 정수이다. 
-'''
 # # 기본틀 
 # # 원섭
 # # a1 = 10 -> 40
@@ -32,15 +21,22 @@
 # print(sum(a)//5)
 
 
-# 
-# import sys
-# a = int(sys.stdin.readline())
-# a = [10,65,100,30,95]
-a = []
+# 1
+# a = []
+# for i in range(5):
+#     score = int(input())
+#     a.append(score)
+# for i in range(5): # 삭제
+#     if a[i] < 40:
+#         a[i] = 40
+# print(sum(a)//5)
+
+# 2
+score = 0
 for i in range(5):
-    score = int(input())
-    a.append(score)
-for i in range(5):
-    if a[i] < 40:
-        a[i] = 40
-print(sum(a)//5)
+    x = int(input())
+    if x <40:
+        x=40
+    score += x
+
+print(int(score/5))
