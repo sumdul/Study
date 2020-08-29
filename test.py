@@ -7,10 +7,5 @@
 # C = list(map(int,sys.stdin.readline().split()))
 # print(C)
 
-
-a = [(1,2,3,4)]
-
-
-print(type(a))
-
-a = []
+a = list(map(int, input().split()))
+print(a)
