@@ -6,4 +6,7 @@ for i in range(N, 0, -1):
             print('*', end='')
         else :
             print(' ', end='')
-    print()
+    for j in range(N, 0, -1):
+        if j > i:
+            print('*', end='')
+    print('')
